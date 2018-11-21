@@ -8,6 +8,10 @@
 >2018年10月30日 | 使用Django完成重构，后台从Java环境迁移到Python环境，提供稳定的免VPN环境。
 
 >2018年11月9日 | 修复login.py中登录函数的一个bug
+
+>2018年11月15日 | 新增校园卡查询功能/(仅发布在微信小程序内)
+
+>2018年11月21日 | 新增一键评教功能
 ***
 关于免VPN： 
 1、基于Ubuntu，在Docker内运行校园网VPN程序，固定容器的IP地址（Docker Hub搜索仓库auchandirect/forticlient） 2、定义IP路由容器到教务处IP（202.207.247.44 via 172.20.0.2 |202.207.247.60 via 172.20.0.2） 3、VPN的登录态会失效，可以编写脚本，利用Crontab来定时任务，定时重启VPN容器（0 0 * * * /usr/bin/python3 /opt/task/vpn.py &）
